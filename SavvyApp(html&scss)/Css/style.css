@@ -1,0 +1,525 @@
+* {
+  margin: 0rem;
+  padding: 0rem;
+}
+
+body {
+  margin: 0rem;
+}
+
+.bg-container {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.card-container {
+  background-color: black;
+  height: 45px;
+  width: 100%;
+  position: fixed;
+}
+
+@media only screen and (max-width: 767px) {
+  .bg-container {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .card-container {
+    background-color: black;
+    height: 45px;
+    width: 100%;
+    position: fixed;
+  }
+}
+.card {
+  width: inherit;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    width: inherit;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+  }
+}
+.card-container__backgroundImage {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 35px;
+  font-family: "roboto";
+  font-weight: 700;
+  width: 400px;
+  padding: 5px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 16px;
+    width: 200px;
+    padding-top: 15px;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+h2 {
+  font-size: 25px;
+  font-family: "roboto";
+  font-weight: 400;
+  width: 400px;
+  text-align: center;
+  padding: 5px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: 12px;
+    width: 200px;
+    text-align: center;
+  }
+}
+.content--knowmorebtn {
+  background-color: black;
+  color: white;
+  width: 250px;
+  height: 45px;
+  font-size: 20px;
+  border-width: 0;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .content--knowmorebtn {
+    font-size: 10px;
+    width: 100px;
+    height: 25px;
+    margin-bottom: 20px;
+  }
+}
+.content {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .content {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-end;
+  }
+}
+.card-container__logo {
+  padding: 5px;
+  margin: 5px;
+  height: 26px;
+}
+
+.card-container__backgroundImage {
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width) {
+  .card-container__backgroundImage {
+    height: auto;
+    max-width: 100%;
+  }
+}
+.sec-container {
+  display: flex;
+  background-color: whitesmoke;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+@media screen and (max-width: 767px) {
+  .sec-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.sec-container p {
+  font-size: 30px;
+  font-family: "roboto";
+  width: 400px;
+}
+@media screen and (max-width) {
+  .sec-container p {
+    font-size: 15px;
+    width: 100%;
+  }
+}
+.sec-container .bold {
+  font-weight: 600;
+}
+@media screen and (max-width: 767px) {
+  .sec-container .bold {
+    font-weight: 700;
+  }
+}
+
+.bank-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .bank-logo .bank-logo {
+    padding: 20px;
+  }
+}
+.bank-logo__hdfc {
+  object-fit: cover;
+  width: 127px;
+  height: 76px;
+}
+@media screen and (max-width: 767px) {
+  .bank-logo__hdfc {
+    object-fit: cover;
+    width: 100px;
+    height: 60px;
+  }
+}
+.bank-logo__icici {
+  width: 190px;
+  height: 40px;
+  margin-top: 15px;
+}
+@media screen and (max-width: 767px) {
+  .bank-logo__icici {
+    margin-top: 8px;
+    width: 100px;
+    height: 60px;
+  }
+}
+.bank-logo__axis {
+  object-fit: cover;
+  width: 192px;
+  height: 49px;
+  margin-top: 10px;
+}
+@media screen and (max-width: 767px) {
+  .bank-logo__axis {
+    width: 100px;
+    height: 60px;
+    margin-top: 8px;
+  }
+}
+.bank-logo__sbi {
+  width: 200px;
+  height: 50px;
+  margin-top: 10px;
+}
+@media screen and (max-width: 767px) {
+  .bank-logo__sbi {
+    width: 90px;
+    height: 50px;
+    margin-top: 6px;
+  }
+}
+
+.nav-bar ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50vw;
+  padding: 20px;
+}
+@media screen and (max-width: 767px) {
+  .nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+  }
+}
+.nav-bar li {
+  font-size: 25px;
+  color: gray;
+}
+@media screen and (max-width: 767px) {
+  .nav-bar li {
+    font-size: 18px;
+  }
+}
+.nav-bar--default:hover {
+  color: black;
+}
+.nav-bar--selected:hover {
+  color: black;
+}
+
+.content-productImg {
+  height: 490px;
+  width: 465px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .content-productImg {
+    height: 350px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+  }
+}
+.content-productImg__productImage1 {
+  height: 430px;
+  width: 100%;
+  align-self: center;
+}
+@media screen and (max-width: 767px) {
+  .content-productImg__productImage1 {
+    height: 350px;
+    width: 300px;
+    align-self: center;
+  }
+}
+
+.row1-details {
+  display: flex;
+  flex-direction: row;
+  width: 380px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media screen and (max-width: 767px) {
+  .row1-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 300px;
+  }
+}
+.row1-details__content {
+  font-size: 20px;
+  font-family: "roboto";
+  margin-left: 20px;
+}
+@media screen and (max-width: 767px) {
+  .row1-details__content {
+    font-size: 15px;
+  }
+}
+.row1-details__btn {
+  width: 136px;
+  height: 36px;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}
+@media screen and (max-width: 767px) {
+  .row1-details__btn {
+    width: 120px;
+    height: 30px;
+    font-size: 10px;
+  }
+}
+.row1-details__content {
+  font-size: 20px;
+  font-family: "roboto";
+  margin-left: 20px;
+}
+@media screen and (max-width) {
+  .row1-details__content {
+    font-size: 15px;
+  }
+}
+
+.content-display {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .content-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.customer-section {
+  background-color: black;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.customer-section__heading {
+  color: white;
+  font-size: 30px;
+  font-family: "roboto";
+  text-align: center;
+}
+.customer-section__cards {
+  display: flex;
+  flex-direction: row;
+  margin-left: 17rem;
+  width: 100vw;
+}
+.customer-section__review {
+  background-color: white;
+  height: 300px;
+  width: 350px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 2px solid yellow;
+  border-radius: 10px;
+}
+.customer-section__reviewerName {
+  font-size: 18px;
+  margin-top: 130px;
+  font-family: "roboto";
+  color: rgba(28, 28, 28, 0.74);
+  text-align: right;
+  font-weight: 200;
+}
+.customer-section__reviewContent {
+  font-size: 18px;
+  font-family: "roboto";
+  color: rgba(28, 28, 28, 0.74);
+  padding: 10px;
+  width: 350px;
+  font-weight: 500;
+}
+
+.bypress__heading {
+  color: white;
+  font-size: 30px;
+  font-family: "roboto";
+  text-align: center;
+}
+.bypress__cards {
+  display: flex;
+  flex-direction: row;
+  margin-left: 17rem;
+  width: 100vw;
+}
+.bypress__talk {
+  background-color: white;
+  height: 300px;
+  width: 350px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.bypress__img {
+  margin-top: 5px;
+}
+.bypress__content {
+  margin-top: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer-section {
+  background-color: whitesmoke;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+@media screen and (max-width: 767px) {
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: whitesmoke;
+  }
+}
+.footer-section__details {
+  margin-top: 25px;
+  margin-left: 25px;
+  font-size: 20px;
+  width: 100%;
+  overflow: hidden;
+  word-wrap: break-word;
+  word-break: break-word;
+  margin-bottom: 25px;
+  margin-right: 5px;
+  font-family: "Roboto";
+}
+@media screen and (max-width: 767px) {
+  .footer-section__detail {
+    font-size: 15px;
+    width: 90%;
+    padding-left: 10px;
+    margin: 10px;
+  }
+}
+
+.footer {
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    width: 100vw;
+  }
+}
+.footerimgIcon {
+  padding: 5px;
+  align-self: center;
+  vertical-align: middle;
+  max-width: 100%;
+}
+.footer__termsAndCondition {
+  color: black;
+  border-left: 1px solid lightgrey;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  height: 20px;
+}
+@media screen and (max-width: 767px) {
+  .footer__termsAndCondition {
+    font-size: 15px;
+    font-weight: 400;
+    height: 10px;
+  }
+}

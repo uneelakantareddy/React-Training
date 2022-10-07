@@ -1,0 +1,37 @@
+ @mixin bgContainer {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+@mixin cardContainer{
+    background-color: black;
+    height:45px;
+    width: 100%;
+    position: fixed;
+}
+
+@mixin  card{
+    width: inherit;
+    display: flex;
+    justify-content: flex-end;     
+    
+}
+
+@mixin  content {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;  
+}
+
+@mixin advertiseHeading{
+    
+    color: white;
+    font-size: 30px;
+    font-family: "roboto";
+    text-align: center;
+        
+}
